@@ -42,4 +42,26 @@ letter-spacing: 0%;
     width: 400px;
     padding: 30px;
 }
+.why-cont1{
+    width: 400px;
+    padding: 20px;
 }
+}
+@media (max-width: 768px){
+    .why-bg-cont{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.why-cont{
+    width: 300px;
+    padding: 25px;
+}
+.why-cont1{
+    width: 300px;
+    padding: 15px;
+}
+.why-desc{
+    font-size: 13px;
+}
+}
+

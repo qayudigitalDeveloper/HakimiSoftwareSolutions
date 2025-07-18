@@ -56,3 +56,24 @@
         font-size: 40px;
     }
 }
+
+@media (max-width: 768px) {
+    .testi-cont{
+        padding: 20px;
+        border-radius: 10px;
+        width: 260px;
+        p{
+            font-size: 12px;
+        }
+    }
+    .test-name{
+        font-size: 15px;
+        margin: 10px;
+    }
+    .star{
+        font-size: 15px;
+    }
+    .profile-img{
+        height: 80px;
+    }
+}

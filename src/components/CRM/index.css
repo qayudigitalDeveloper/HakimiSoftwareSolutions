@@ -58,3 +58,21 @@ padding-top: 40px;
     font-size: 18px;
     color: #000;
 }
+@media (max-width: 768px){
+    .crm-li-h{
+        font-size: 20px;
+    }
+    .crem-li-p{
+        font-size: 15px;
+    }
+    .li-crm-cont{
+            padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 35px;
+    height: 300px;
+    }
+    .crm-imh{
+        height: 60px;
+    }
+}

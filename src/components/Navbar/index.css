@@ -76,3 +76,21 @@ a{
         font-size: 27px;
     }
 }
+@media (max-width: 768px) {
+    .nav-text{
+        font-size: 15px;
+    }
+    .logo{
+        height: 60px;
+    }
+    .big-text{
+        font-size: 23px;
+    }
+    .nav-text {
+        line-height: 40%;
+    }
+    .nav-sub-cont{
+        padding: 0px;
+        height: 60px;
+    }
+}

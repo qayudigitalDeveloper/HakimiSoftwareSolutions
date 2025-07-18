@@ -98,3 +98,18 @@ outline: none;
     }
     
 }
+@media (max-width: 768px){
+    .hon-h{
+        line-height: 1.2;
+        text-align: center;
+    }
+    .li-hon{
+        font-size: 13px;
+    }
+    .tick{
+        margin-right: 2px;
+    }
+    .hon-btn{
+        font-size: 15px;
+    }
+}
