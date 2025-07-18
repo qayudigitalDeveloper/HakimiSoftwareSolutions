@@ -1,7 +1,7 @@
 import './index.css'
 
 const Footer = () => {
-    const phone = "971557443213";
+    const phone = "971 56 660 1500";
     const message = encodeURIComponent("Hello, I want to know more about Zoho CRM");
     const whatsappUrl = `https://wa.me/${phone}?text=${message}`
     return (
