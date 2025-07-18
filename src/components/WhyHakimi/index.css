@@ -1,0 +1,34 @@
+.why-bg-cont{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
+
+}
+.why-h{
+    font-size: var(--headings-font-size);
+    color: #000;
+}
+.why-p{
+    font-size: var(--desc-font-size);
+    color: #000;
+}
+.why-cont1{
+    max-width: 500px;
+   margin-bottom: 30px;
+}
+.why-cont{
+   box-shadow: 2px 0px 15.8px 0px #1E51CE61;
+   padding: 50px;
+   max-width: 500px;
+   margin-bottom: 30px;
+}
+.why-desc{
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}

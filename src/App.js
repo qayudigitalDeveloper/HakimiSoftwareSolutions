@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar'
+import TopCont from './components/TopCont';
+import Honest from './components/Honest';
+import CRM from './components/CRM';
+import Vocco from './components/Vocco';
+import WhyHakimi from './components/WhyHakimi';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <TopCont />
+      <Honest />
+      <CRM />
+      <Vocco />
+      <WhyHakimi />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }

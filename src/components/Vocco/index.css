@@ -1,0 +1,22 @@
+.Voc-bg-cont{
+    background-color: var(--primary-logo-color);
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 100px;
+}
+.voc-h{
+    font-size: var(--headings-font-size);
+}
+.voc-p{
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: var(--desc-font-size);
+    span{
+        font-size: 30px;
+    }
+}
