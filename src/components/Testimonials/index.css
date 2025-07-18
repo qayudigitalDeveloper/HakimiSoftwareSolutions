@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 150px;
-    padding-right: 150px;
-    
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 60px;
 }
 
 .testi-cards-cont{
