@@ -65,3 +65,14 @@ a{
     text-decoration: none;
     color: #000;
 }
+@media (max-width: 1024px) {
+    .nav-text{
+        font-size: 18px;
+    }
+    .logo{
+        height: 80px;
+    }
+    .big-text{
+        font-size: 27px;
+    }
+}

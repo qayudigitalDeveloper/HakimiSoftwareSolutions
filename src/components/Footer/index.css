@@ -26,17 +26,24 @@
     margin-left: 20px;
     margin-right: 20px;
 
-font-weight: 600;
-font-style: Semi Bold;
-font-size: var(--desc-font-size);
-line-height: 100%;
-letter-spacing: 0%;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: var(--desc-font-size);
+    line-height: 100%;
+    letter-spacing: 0%;
 
-cursor: pointer;
-outline: none;
+    cursor: pointer;
+    outline: none;
 
 
-    span{
+    span {
         color: green;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-bg-cont {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }

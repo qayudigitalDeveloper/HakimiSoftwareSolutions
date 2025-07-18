@@ -81,3 +81,20 @@ cursor: pointer;
 outline: none;
 
 }
+
+@media (max-width: 1024px) {
+    .hon-bg-cont{
+        padding-left: 80px;
+    padding-right: 80px;
+    }
+    .hon-le-img{
+        height: 60vh;
+    }
+    .li-hon{
+        font-size: 15px;
+    }
+    .hon-btn{
+        font-size: 17px;
+    }
+    
+}
