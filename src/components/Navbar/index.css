@@ -1,5 +1,8 @@
-.outer-cont {
+.applymargintop{
+    margin-top: 50px;
+}
 
+.outer-cont {
     background-color: #FFFFFF;
     padding-left: 50px;
     padding-right: 60px;
@@ -12,6 +15,13 @@
     z-index: 1000;
     height: 150px;
 }
+.nav-up-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}
+
 
 .in-cont-nav {
     display: flex;
