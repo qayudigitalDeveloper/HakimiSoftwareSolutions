@@ -2,8 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar'
 import TopCont from './components/TopCont';
 import Honest from './components/Honest';
-import CRM from './components/CRM';
-import Vocco from './components/Vocco';
+import CRM from './components/Services';
 import WhyHakimi from './components/WhyHakimi';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
@@ -15,7 +14,6 @@ function App() {
       <TopCont />
       <Honest />
       <CRM />
-      <Vocco />
       <WhyHakimi />
       <Testimonials />
       <Footer />

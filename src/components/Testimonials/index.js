@@ -1,6 +1,9 @@
 import './index.css'
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { BsDot } from "react-icons/bs";
+import projobs4youlogo from './../../assets/projobs4you-logo.png'
+import trutermslogo from './../../assets/trutermslogo.png'
+import voccalogo from './../../assets/voccalogo.avif'
 
 const Testimonials=()=>{
     return (
@@ -11,9 +14,9 @@ const Testimonials=()=>{
             <div className='testi-cont'>
                 <img 
                 className='profile-img' 
-                src="https://res.cloudinary.com/dd2noevdp/image/upload/v1752754957/unsplash_OhKElOkQ3RE_em6ihi.png"
+                src={trutermslogo}
                 alt="profile-img" />
-                <h1 className='test-name'>Dania</h1>
+                <h1 className='test-name'>Truterms</h1>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
@@ -26,10 +29,10 @@ const Testimonials=()=>{
             <div className='testi-cont'>
                 <img 
                 className='profile-img'
-                src="https://res.cloudinary.com/dd2noevdp/image/upload/v1752754957/unsplash_WMD64tMfc4k_ly1zic.png"
+                src={voccalogo}
                 alt="profile-img"
                  />
-                <h1 className='test-name'>Ashwin</h1>
+                <h1 className='test-name'>VOCCA</h1>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star'/>
                     <MdOutlineStarPurple500 className='blue star' />
@@ -43,10 +46,10 @@ const Testimonials=()=>{
             <div className='testi-cont'>
                 <img 
                 className='profile-img' 
-                src="https://res.cloudinary.com/dd2noevdp/image/upload/v1752754957/unsplash_6anudmpILw4_pl2yel.png"
+                src={projobs4youlogo}
                 alt="profile-img"
                 />
-                <h1 className='test-name'>Norman</h1>
+                <h1 className='test-name'>ProJobs4You</h1>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />

@@ -1,9 +1,11 @@
 import './index.css'
 
-const CRM = () => {
+const Services = () => {
     return (
         <div id='services' className='crm-bg-cont'>
-            <h1 className='hon-h'>What we build for you with Zoho CRM</h1>
+            <h1 className='hon-h'>What we Implement for you</h1>
+            <p className='hon-p'>We don’t just set up Zoho CRM — we build your entire business OS.</p>
+            <p className=''>Hakimi helps you transition from scattered tools to a seamless, automated system using Zoho’s full suite of business apps.</p>
             <ul className='crm-ul'>
                 <li className='li-crm cont1'>
                     <div className='li-crm-cont'>
@@ -53,4 +55,4 @@ const CRM = () => {
     )
 }
 
-export default CRM
+export default Services

@@ -1,8 +1,8 @@
 import './index.css'
 
 const Footer = () => {
-    const phone = "971 56 660 1500";
-    const message = encodeURIComponent("Hello, I want to know more about Zoho CRM");
+    const phone = "971566601500";
+    const message = encodeURIComponent("Hello, I want to know more about Zoho Implementation");
     const whatsappUrl = `https://wa.me/${phone}?text=${message}`
     return (
         <div id="footer" className='footer-bg-cont'>
@@ -18,10 +18,6 @@ const Footer = () => {
                         Book a free consultation on <span>WhatsApp</span>
                     </button>
                 </a>
-
-                <button className='footer-btn'>
-                    Message directly at +971 56 660 1500
-                </button>
             </div>
         </div>
     )
