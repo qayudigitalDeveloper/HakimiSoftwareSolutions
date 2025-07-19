@@ -15,15 +15,17 @@
     color: #000;
 }
 .why-cont1{
-    max-width: 500px;
    margin-bottom: 30px;
+   width: 45%;
 }
+
 .why-cont{
    box-shadow: 2px 0px 15.8px 0px #1E51CE61;
    padding: 50px;
-   max-width: 500px;
    margin-bottom: 30px;
+   width: 45%; 
 }
+
 .why-desc{
 font-weight: 400;
 font-style: Regular;
