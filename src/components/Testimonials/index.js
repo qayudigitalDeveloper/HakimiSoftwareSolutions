@@ -22,7 +22,7 @@ const Testimonials=()=>{
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
-                    <MdOutlineStarPurple500 className='star' />
+                    <MdOutlineStarPurple500 className='blue star' />
                 </div>
                 <p>“What stood out most for us was that Murtaza and his team took the time to understand our requirements they pay attention to detail, are always a call away, and are commited to delivering top-notch results.”</p>
             </div>
@@ -54,8 +54,8 @@ const Testimonials=()=>{
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
-                    <MdOutlineStarPurple500 className='star' />
-                    <MdOutlineStarPurple500 className='star' />
+                    <MdOutlineStarPurple500 className='blue star' />
+                    <MdOutlineStarPurple500 className='blue star' />
                 </div>
                 <p>“From the outset the experience has been great, starting with the initial requirement sessions to the final software delivery and also most importantly the post sales service/ support has been exceptional. Mr. Murtaza has been a great support.”</p>
             </div>

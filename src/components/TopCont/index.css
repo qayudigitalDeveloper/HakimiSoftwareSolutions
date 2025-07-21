@@ -8,7 +8,7 @@
     flex-direction: column;
     padding-left: 60px;
     padding-right: 60px;
-    
+    margin-top: 150px;
 }
 
 .top-h1 {
@@ -105,16 +105,17 @@ position: absolute;
 
 @media (max-width: 1024px) {
   .top-h1{
-    font-size: 70px;
+    font-size: 60px;
   }
   .top-p{
-    font-size: 25px;
+    font-size: 20px;
   }
   .top-btn{
-    font-size: 19px;
-    width: 380px;
-    height: 55px;
+    font-size: 13px;
+    width: 370px;
+    height: 45px;
   }
+  
 }
 
 @media (max-width: 768px) {

@@ -7,6 +7,8 @@ import WhyHakimi from './components/WhyHakimi';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
+import { FaWhatsapp } from "react-icons/fa";
+
 function App() {
   return (
     <div className="app">
@@ -17,6 +19,14 @@ function App() {
       <WhyHakimi />
       <Testimonials />
       <Footer />
+      <a
+      href="https://wa.me/971566601500" 
+      target="_blank"
+      rel="noopener noreferrer"
+      className='whatsicon'
+    >
+      <FaWhatsapp />
+    </a>
     </div>
   );
 }

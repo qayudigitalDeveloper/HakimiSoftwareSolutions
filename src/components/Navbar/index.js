@@ -10,7 +10,7 @@ const navContent = [
   { id: 1, text: 'Home', index: '#home' },
   { id: 2, text: 'About Us', index: '#aboutus' },
   { id: 3, text: 'Services', index: '#services' },
-  { id: 4, text: 'Blog', index: '#blog' },
+  /*{ id: 4, text: 'Blog', index: '#blog' },*/
   { id: 5, text: 'Testimonials', index: '#testimolials' },
 ];
 
@@ -44,22 +44,40 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handlemail =()=>{
+    const subject = encodeURIComponent("Query from Website");
+    const body = encodeURIComponent("Hi Qayu Digital,\n\nI am interested in your services.");
+    window.open(
+    `https://mail.google.com/mail/?view=cm&fs=1&to=info@qayudigital.com&su=${subject}&body=${body}`,
+    '_blank'// Opens in a new tab
+  );
+  }
+
   return (
-    <div >
+    <div>
       {atTop && (
         <div className='nav-up-cont'>
-          <div style={{display:"flex", alignItems: 'center', width: "20%", justifyContent:"space-between"}}>
-            <p><FaPhoneAlt /> +971-566-601-500 </p>
-            <p><GoMail /> info@qayudigital.com</p>
+          <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
+            <p className="mailbutton"><FaPhoneAlt className='contacticons' /> +971-566-601-500 </p>
+            <button onClick={handlemail}
+            className="mailbutton">
+              <GoMail className='contacticon' />
+                info@qayudigital.com
+            </button>
+
           </div>
-          <div style={{display:"flex", alignItems: 'center', width: "5%", justifyContent:"space-between"}}>
-            <GoMail style={{fontSize: "23px"}}/>
-            <FaLinkedinIn style={{fontSize: "23px"}} />
-            <IoLogoInstagram  style={{fontSize: "23px"}}/>
+          <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
+            <a><GoMail className='contacticons' onClick={handlemail} /></a>
+            <a style={{textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
+              <FaLinkedinIn className='contacticons' />
+            </a>
+            <a href="https://www.instagram.com/hakimisoftwaresolutions" target="_blank" rel="noopener noreferrer">
+              <IoLogoInstagram className='contacticons' />
+            </a>
           </div>
         </div>
       )}
-      <div className={`outer-cont ${showNavbar ? 'visible' : 'hidden'} ${atTop === true && "applymargintop"}`} >
+      <div className={`outer-cont visible ${atTop === true && "applymargintop"}`} >
         <div className='in-cont-nav'>
           <div className='img-cont-nav'>
             <img className='logo' onClick={scrollToTop} src={logo} alt='logo' />
@@ -67,8 +85,7 @@ const Navbar = () => {
               ZOHO Experts
             </p>
           </div>
-          <div className='nav-sub-cont'>
-            <ul className='ul-nav'>
+            <ul className='ul-nav nav-sub-cont'>
               {navContent.map(each => (
                 <li className='li-nav' key={each.id}>
                   <a href={each.index}>
@@ -77,7 +94,6 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
           <a href="#footer"><h1 className='big-text'>Contact Us</h1></a>
         </div>
 

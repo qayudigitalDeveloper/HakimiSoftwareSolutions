@@ -1,4 +1,4 @@
-.applymargintop{
+.applymargintop {
     margin-top: 50px;
 }
 
@@ -15,11 +15,46 @@
     z-index: 1000;
     height: 150px;
 }
-.nav-up-cont{
+
+.nav-up-cont {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
     height: 50px;
+    border-bottom: 0.5px solid gray;
+}
+
+.mailbutton {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contacticons {
+    font-size: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+
+}
+
+.contacticon {
+    font-size: 23px;
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 10px;
 }
 
 
@@ -30,7 +65,6 @@
 }
 
 .nav-sub-cont {
-    padding-bottom: 20px;
     border: 1px solid #D9EEFF;
     box-shadow: 0px 1px 20.6px 0px #D9EEFF;
     width: 60%;
@@ -38,7 +72,10 @@
     border-radius: 50px;
     opacity: 1;
     background: #FFFFFF;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline-start: 0%;
 }
 
 .logo {
@@ -48,18 +85,18 @@
     opacity: 1;
     cursor: pointer;
     outline: none;
-    
+
 }
 
-.img-cont-nav{
-position: relative;
+.img-cont-nav {
+    position: relative;
 }
 
 .text-img {
     color: #1E51CE;
     font-size: 25px;
     font-weight: normal;
-font-family: "Nunito", sans-serif;
+    font-family: "Nunito", sans-serif;
     position: absolute;
     bottom: -30px;
     right: 20px;
@@ -75,13 +112,6 @@ font-family: "Nunito", sans-serif;
 
 }
 
-.ul-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-inline-start: 0%;
-    padding-top: 25px;
-}
 
 .li-nav {
     list-style-type: none;
@@ -99,11 +129,6 @@ font-family: "Nunito", sans-serif;
 a {
     text-decoration: none;
     color: #000;
-}
-
-.outer-cont.hidden {
-    top: -150px;
-    /* or -80px based on height */
 }
 
 .visible {
@@ -134,17 +159,46 @@ a {
 }
 
 
+
 @media (max-width: 1024px) {
     .nav-text {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .logo {
-        height: 80px;
+        height: 75px;
     }
 
     .big-text {
-        font-size: 27px;
+        font-size: 23px;
+    }
+
+    .text-img {
+        font-size: medium;
+        bottom: -20px;
+    right: 20px;
+    }
+
+    .mailbutton {
+        font-size: 15px;
+    }
+    .contacticon{
+        font-size: 15px;
+    }
+    .contacticons{
+        font-size: 15px;
+    }
+    .nav-up-cont{
+        height: 30px;
+    }
+    .applymargintop{
+        margin-top: 30px;
+    }
+    .nav-sub-cont{
+        height: 60px;
+    }
+    .outer-cont{
+        height: 110px;
     }
 }
 

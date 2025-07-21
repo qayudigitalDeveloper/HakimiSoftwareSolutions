@@ -40,6 +40,7 @@ code {
   :root {
   --headings-font-size: 38px;
   --desc-font-size: 18px;
+  --nav-font-size: 15px
 }
 }
 @media (max-width: 768px){
