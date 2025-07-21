@@ -58,10 +58,11 @@ position: relative;
 .text-img {
     color: #1E51CE;
     font-size: 25px;
-    font-weight: bold;
-
+    font-weight: normal;
+font-family: "Nunito", sans-serif;
     position: absolute;
     bottom: -30px;
+    right: 20px;
 }
 
 .big-text {

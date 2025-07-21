@@ -52,7 +52,7 @@ const Navbar = () => {
             <p><FaPhoneAlt /> +971-566-601-500 </p>
             <p><GoMail /> info@qayudigital.com</p>
           </div>
-          <div style={{display:"flex", alignItems: 'center', width: "20%", justifyContent:"space-between"}}>
+          <div style={{display:"flex", alignItems: 'center', width: "5%", justifyContent:"space-between"}}>
             <GoMail style={{fontSize: "23px"}}/>
             <FaLinkedinIn style={{fontSize: "23px"}} />
             <IoLogoInstagram  style={{fontSize: "23px"}}/>
@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className='img-cont-nav'>
             <img className='logo' onClick={scrollToTop} src={logo} alt='logo' />
             <p className='text-img'>
-              ZOHO Expertise
+              ZOHO Experts
             </p>
           </div>
           <div className='nav-sub-cont'>
