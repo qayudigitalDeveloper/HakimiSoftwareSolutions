@@ -56,3 +56,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 430px) {
+  .whatsicon {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+  }
+}

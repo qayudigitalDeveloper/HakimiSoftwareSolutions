@@ -40,12 +40,17 @@ code {
   :root {
   --headings-font-size: 38px;
   --desc-font-size: 18px;
-  --nav-font-size: 15px
 }
 }
 @media (max-width: 768px){
   :root {
   --headings-font-size: 34px;
   --desc-font-size: 15px;
+}
+}
+@media (max-width: 430px){
+  :root {
+  --headings-font-size: 30px;
+  --desc-font-size: 12px;
 }
 }

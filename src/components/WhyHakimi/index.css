@@ -67,3 +67,25 @@ letter-spacing: 0%;
 }
 }
 
+@media (max-width: 430px){
+.why-cont1{
+    width: 100%;
+    text-align: center;
+}
+.why-bg-cont{
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
+    flex-direction: column;
+}
+.why-cont{
+    align-self: center;
+    width: 90%;
+}
+}
+@media (max-width: 320px) {
+    .why-bg-cont{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,7 +1,7 @@
 import './index.css';
 import logo from './../../assets/logo1.png';
 import { useEffect, useRef, useState } from 'react';
-import { FaPhoneAlt } from "react-icons/fa";
+import { FaBars, FaPhoneAlt } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -17,6 +17,7 @@ const navContent = [
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   const [atTop, setAtTop] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
@@ -44,47 +45,54 @@ const Navbar = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handlemail =()=>{
+  const handlemail = () => {
     const subject = encodeURIComponent("Query from Website");
     const body = encodeURIComponent("Hi Qayu Digital,\n\nI am interested in your services.");
     window.open(
-    `https://mail.google.com/mail/?view=cm&fs=1&to=info@qayudigital.com&su=${subject}&body=${body}`,
-    '_blank'// Opens in a new tab
-  );
+      `https://mail.google.com/mail/?view=cm&fs=1&to=murtaza@hakimisoftwaresolutions.com&su=${subject}&body=${body}`,
+      '_blank'// Opens in a new tab
+    );
   }
 
-  return (
-    <div>
-      {atTop && (
-        <div className='nav-up-cont'>
-          <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
-            <p className="mailbutton"><FaPhoneAlt className='contacticons' /> +971-566-601-500 </p>
-            <button onClick={handlemail}
-            className="mailbutton">
-              <GoMail className='contacticon' />
-                info@qayudigital.com
-            </button>
 
+  const toggleSidebar = () => setIsOpen(!isOpen);
+
+  return (
+    <>
+      <div>
+        {atTop && (
+          <div className='nav-up-cont'>
+            <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
+              <p className="mailbutton"><FaPhoneAlt className='contacticons' /> +971-566-601-500 </p>
+              <button onClick={handlemail}
+                className="mailbutton">
+                <GoMail className='contacticon' />
+                murtaza@hakimisoftwaresolutions.com
+              </button>
+
+            </div>
+            <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
+              <a><GoMail className='contacticons' onClick={handlemail} /></a>
+              <a style={{ textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
+                <FaLinkedinIn className='contacticons' />
+              </a>
+              <a href="https://www.instagram.com/hakimisoftwaresolutions" target="_blank" rel="noopener noreferrer">
+                <IoLogoInstagram className='contacticons' />
+              </a>
+            </div>
           </div>
-          <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
-            <a><GoMail className='contacticons' onClick={handlemail} /></a>
-            <a style={{textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
-              <FaLinkedinIn className='contacticons' />
-            </a>
-            <a href="https://www.instagram.com/hakimisoftwaresolutions" target="_blank" rel="noopener noreferrer">
-              <IoLogoInstagram className='contacticons' />
-            </a>
-          </div>
-        </div>
-      )}
-      <div className={`outer-cont visible ${atTop === true && "applymargintop"}`} >
-        <div className='in-cont-nav'>
-          <div className='img-cont-nav'>
-            <img className='logo' onClick={scrollToTop} src={logo} alt='logo' />
-            <p className='text-img'>
-              ZOHO Experts
-            </p>
-          </div>
+        )}
+        <div className={`outer-cont visible ${atTop === true && "applymargintop"}`} >
+          <div className='in-cont-nav'>
+            <div className='ham-berger-cont'>
+              <div className='img-cont-nav'>
+                <img className='logo' onClick={scrollToTop} src={logo} alt='logo' />
+                <p className='text-img'>
+                  ZOHO Experts
+                </p>
+              </div>
+              <FaBars className="bars" onClick={toggleSidebar} />
+            </div>
             <ul className='ul-nav nav-sub-cont'>
               {navContent.map(each => (
                 <li className='li-nav' key={each.id}>
@@ -94,12 +102,25 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          <a href="#footer"><h1 className='big-text'>Contact Us</h1></a>
+            <a href="#footer"><h1 className='big-text'>Contact Us</h1></a>
+          </div>
+
         </div>
 
+
+      </div>
+      <div className={`side-tab ${isOpen ? 'open' : ''}`}>
+        <ul>
+          {navContent.map((each) => (
+            <li key={each.id} onClick={toggleSidebar}>
+              <a href={each.index}>{each.text}</a>
+            </li>
+          ))}
+        </ul>
       </div>
 
-    </div>
+      {isOpen && <div className="overlay" onClick={toggleSidebar}></div>}
+    </>
   );
 };
 

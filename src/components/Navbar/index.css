@@ -102,6 +102,13 @@
     right: 20px;
 }
 
+/*.ham-berger-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+*/
 .big-text {
     color: var(--primary-logo-color);
     font-weight: 700;
@@ -123,12 +130,13 @@
     font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-
+    outline: none;
 }
 
 a {
     text-decoration: none;
     color: #000;
+    outline: none;
 }
 
 .visible {
@@ -158,6 +166,52 @@ a {
     transform: scaleX(1);
 }
 
+.side-tab {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100%;
+    background: #222;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1010;
+}
+
+.side-tab.open {
+    left: 0;
+}
+
+.side-tab ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-tab li {
+    padding: 15px 20px;
+}
+
+.side-tab a {
+    color: white;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+.bars {
+    color: var(--primary-logo-color);
+    font-size: 20px;
+    display: none;
+}
 
 
 @media (max-width: 1024px) {
@@ -176,28 +230,34 @@ a {
     .text-img {
         font-size: medium;
         bottom: -20px;
-    right: 20px;
+        right: 20px;
     }
 
     .mailbutton {
         font-size: 15px;
     }
-    .contacticon{
+
+    .contacticon {
         font-size: 15px;
     }
-    .contacticons{
+
+    .contacticons {
         font-size: 15px;
     }
-    .nav-up-cont{
+
+    .nav-up-cont {
         height: 30px;
     }
-    .applymargintop{
+
+    .applymargintop {
         margin-top: 30px;
     }
-    .nav-sub-cont{
+
+    .nav-sub-cont {
         height: 60px;
     }
-    .outer-cont{
+
+    .outer-cont {
         height: 110px;
     }
 }
@@ -223,4 +283,150 @@ a {
         padding: 0px;
         height: 60px;
     }
+
+    .nav-sub-cont {
+        display: none;
+    }
+
+    .big-text {
+        display: none;
+    }
+
+    .nav-up-cont {
+        display: none;
+
+    }
+
+    .bars {
+        color: var(--primary-logo-color);
+        font-size: 20px;
+        display: inline;
+    }
+
+    .ham-berger-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .img-cont-nav {
+        margin-left: 30%;
+    }
+
+    .text-img {
+        font-size: small;
+        bottom: -15px;
+        right: 20px;
+    }
+     .applymargintop {
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .nav-up-cont {
+        display: none;
+
+    }
+
+    .applymargintop {
+        margin-top: 0px;
+    }
+
+    .outer-cont {
+        height: 95px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .nav-sub-cont {
+        display: none;
+    }
+
+    .big-text {
+        display: none;
+    }
+
+    .in-cont-nav {
+        justify-content: center;
+    }
+
+    .text-img {
+        font-size: small;
+        bottom: -15px;
+        right: 20px;
+    }
+
+    .bars {
+        color: var(--primary-logo-color);
+        font-size: 20px;
+        display: inline;
+    }
+
+    .ham-berger-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .img-cont-nav {
+        margin-left: 30%;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .nav-up-cont {
+        display: none;
+
+    }
+
+    .applymargintop {
+        margin-top: 0px;
+    }
+
+    .outer-cont {
+        height: 95px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .nav-sub-cont {
+        display: none;
+    }
+
+    .big-text {
+        display: none;
+    }
+
+    .in-cont-nav {
+        justify-content: center;
+    }
+
+    .text-img {
+        font-size: small;
+        bottom: -15px;
+        right: 20px;
+    }
+
+    .bars {
+        color: var(--primary-logo-color);
+        font-size: 20px;
+        display: inline;
+    }
+
+    .ham-berger-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .img-cont-nav {
+        margin-left: 30%;
+    }
+
 }

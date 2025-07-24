@@ -38,20 +38,20 @@ const serviceslist = [
         sub_services: ["Zoho Desk – for client ticketing",
             "Zoho Assist – for remote support",
             "Zoho Survey – for gathering insights"],
-        service_image: ""
+        service_image: "https://res.cloudinary.com/dd2noevdp/image/upload/v1753093004/support_servey_g6lx40.png"
     },
     {
         id: 6,
         service: 'Team Collaboration & Productivity',
         sub_services: ["Zoho Mail, Cliq, Docs & Workplace – for internal communication",
             "Zoho Projects & Zoho Connect – for team management"],
-        service_image: ""
+        service_image: "https://res.cloudinary.com/dd2noevdp/image/upload/v1753093004/teamcollaboration_mpxvuf.png"
     },
     {
         id: 7,
         service: 'HR & People Ops',
         sub_services: ["Zoho People, Recruit & Payroll – for hiring, onboarding, and payroll automation"],
-        service_image: ""
+        service_image: "https://res.cloudinary.com/dd2noevdp/image/upload/v1753093016/hr_people_ika78d.png"
     }
 ]
 
@@ -59,8 +59,8 @@ const Services = () => {
     return (
         <div id='services' className='crm-bg-cont'>
             <h1 className='hon-h'>What we Implement for you</h1>
-            <p className='hon-p'>We don’t just set up Zoho CRM — we build your entire business OS.</p>
-            <p className=''>Hakimi helps you transition from scattered tools to a seamless, automated system using Zoho’s full suite of business apps.</p>
+            <p className='hon-p imple'>We don’t just set up Zoho CRM — we build your entire business OS.</p>
+            <p className='imple'>Hakimi helps you transition from scattered tools to a seamless, automated system using Zoho’s full suite of business apps.</p>
             {/*<ul className='crm-ul'>
                 <li className='li-crm cont1'>
                     <div className='li-crm-cont'>

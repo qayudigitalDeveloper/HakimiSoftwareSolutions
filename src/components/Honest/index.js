@@ -17,6 +17,13 @@ const Honest=()=>{
             </ul>
             <button className='hon-btn'>At Hakimi Software Solutions, we help you fix that</button>
         </div>
+        <ul className='mib-ul'>
+                <li className='li-hon'><IoCheckmark className="tick" /> If you're constantly asking your team for updates...</li> 
+                <li className='li-hon'><IoCheckmark className="tick" /> If deals are slipping through the cracks…</li> 
+                <li className='li-hon'><IoCheckmark className="tick" /> If follow-ups depend on someone’s memory…</li> 
+                <li className='li-hon'><IoCheckmark className="tick" /> It’s not your team’s fault.It’s your system.</li>
+            </ul>
+            <button className='mob-btn'>At Hakimi Software Solutions, we help you fix that</button>
     </div>
 }
 

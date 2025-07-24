@@ -64,9 +64,11 @@
         padding: 20px;
         border-radius: 10px;
         width: 260px;
+        margin-bottom: 10px;
         p{
             font-size: 12px;
         }
+        
     }
     .test-name{
         font-size: 15px;
@@ -77,5 +79,32 @@
     }
     .profile-img{
         height: 80px;
+    }
+}
+
+@media (max-width: 430px){
+    .texti-bg-cont{
+        padding: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .testi-cards-cont{
+        flex-direction: column;
+    align-items: center;
+    
+    }
+    .testi-cont{
+         padding: 20px;
+        border-radius: 10px;
+        width: 90%;
+        border: 2px solid #1E51CE;
+        height: auto;
+        margin-bottom: 20px;
+        p{
+            font-size: 12px;
+        }
+    }
+    .profile-img{
+        height: auto;
     }
 }

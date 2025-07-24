@@ -42,3 +42,9 @@
         }
     }
 }
+@media (max-width: 320px){
+    .voc-h{
+        font-size: small;
+    }
+    
+}
