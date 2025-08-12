@@ -10,7 +10,7 @@ const Footer = () => {
 
     const handlemail = () => {
         const subject = encodeURIComponent("Query from Website");
-        const body = encodeURIComponent("Hi Qayu Digital,\n\nI am interested in your services.");
+        const body = encodeURIComponent("Hi Hakimi Software Solutions,\n\nI am interested in your services.");
         window.open(
             `https://mail.google.com/mail/?view=cm&fs=1&to=info@qayudigital.com&su=${subject}&body=${body}`,
             '_blank'// Opens in a new tab

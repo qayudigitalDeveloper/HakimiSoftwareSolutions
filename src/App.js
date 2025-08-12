@@ -1,32 +1,21 @@
 import './App.css';
-import Navbar from './components/Navbar'
-import TopCont from './components/TopCont';
-import Honest from './components/Honest';
-import CRM from './components/Services';
-import WhyHakimi from './components/WhyHakimi';
-import Testimonials from './components/Testimonials';
-import Footer from './components/Footer';
-
-import { FaWhatsapp } from "react-icons/fa";
+import Home from './components/Home';
+import ContactUs from './components/ContactUs';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <TopCont />
-      <Honest />
-      <CRM />
-      <WhyHakimi />
-      <Testimonials />
-      <Footer />
-      <a
-      href="https://wa.me/971566601500" 
-      target="_blank"
-      rel="noopener noreferrer"
-      className='whatsicon'
-    >
-      <FaWhatsapp />
-    </a>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='/contact' element={<ContactUs/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

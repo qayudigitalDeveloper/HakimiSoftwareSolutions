@@ -15,7 +15,9 @@ const Honest=()=>{
                 <li className='li-hon'><IoCheckmark className="tick" /> If follow-ups depend on someone’s memory…</li> 
                 <li className='li-hon'><IoCheckmark className="tick" /> It’s not your team’s fault.It’s your system.</li>
             </ul>
-            <button className='hon-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank">
+                <button className='hon-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            </a>
         </div>
         <ul className='mib-ul'>
                 <li className='li-hon'><IoCheckmark className="tick" /> If you're constantly asking your team for updates...</li> 
@@ -23,7 +25,9 @@ const Honest=()=>{
                 <li className='li-hon'><IoCheckmark className="tick" /> If follow-ups depend on someone’s memory…</li> 
                 <li className='li-hon'><IoCheckmark className="tick" /> It’s not your team’s fault.It’s your system.</li>
             </ul>
-            <button className='mob-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank">
+                <button className='mob-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            </a>
     </div>
 }
 

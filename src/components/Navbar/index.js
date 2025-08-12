@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const handlemail = () => {
     const subject = encodeURIComponent("Query from Website");
-    const body = encodeURIComponent("Hi Qayu Digital,\n\nI am interested in your services.");
+    const body = encodeURIComponent("Hi Hakimi Software solutions,\n\nI am interested in your services.");
     window.open(
       `https://mail.google.com/mail/?view=cm&fs=1&to=murtaza@hakimisoftwaresolutions.com&su=${subject}&body=${body}`,
       '_blank'// Opens in a new tab
@@ -102,7 +102,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <a href="#footer"><h1 className='big-text'>Contact Us</h1></a>
+            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank"><h1 className='big-text'>Contact Us</h1></a>
           </div>
 
         </div>
