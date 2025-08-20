@@ -117,7 +117,7 @@ const Services = () => {
                             />
                             <h1 className='crm-li-h'>{each.service}</h1>
                             {each.sub_services.map(eachserve => 
-                                <p className='crem-li-p'><VscDebugBreakpointLog className='point' />  {eachserve}</p>
+                                <p key={eachserve} className='crem-li-p'><VscDebugBreakpointLog className='point' />  {eachserve}</p>
                             )}
                             </div>
                     </li>

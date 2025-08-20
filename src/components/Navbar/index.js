@@ -5,6 +5,7 @@ import { FaBars, FaPhoneAlt } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const navContent = [
   { id: 1, text: 'Home', index: '#home' },
@@ -102,7 +103,9 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank"><h1 className='big-text'>Contact Us</h1></a>
+            {/*<a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank">
+            <h1 className='big-text'>Contact Us</h1></a>*/}
+          <Link to="/contact"><h1 className='big-text'>Contact Us</h1></Link>
           </div>
 
         </div>
