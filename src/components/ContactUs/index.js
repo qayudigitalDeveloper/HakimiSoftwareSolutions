@@ -7,7 +7,8 @@ const ContactUs = () => {
         <div id="contactus" className="contact-bg-cont">
             <div className='cont-left-cont'>
                 <h1 className='conta-h'>Contact us</h1>
-                <p className='crem-li-p'>Need to get in touch with us? Either fill out the form with your inquiry or
+                <p className='crem-li-p'><span className='need' >Need to get in touch with us? </span><br/>
+                    Either fill out the form with your inquiry or
                     find the department email you'd like to contact below.
                 </p>
             </div>
@@ -45,7 +46,7 @@ const ContactUs = () => {
                         <div className='cont-inp-cont'>
                             <div className=''>
                                 <label for='Last_Name' className='hon-p'>Your Name <span
-                                    style={{ color: "red" }}>*</span> </label>
+                                    style={{ color: "black" }}>*</span> </label>
                             </div>
                             <div className=''>
                                 <input type='text' className='text' id='Last_Name' aria-required='true'
@@ -59,7 +60,7 @@ const ContactUs = () => {
                             <div className="">
                                 <label for='Company' className='hon-p'>
                                     Company Name
-                                    <span style={{ color: "red" }}>*</span>
+                                    <span style={{ color: "black" }}>*</span>
                                 </label> </div>
                             <div className='zcwf_col_fld'>
                                 <input type='text' className='text' id='Company' aria-required='true' aria-label='Company'
@@ -74,7 +75,7 @@ const ContactUs = () => {
                         <div className='cont-inp-cont'>
                             <div className=''>
                                 <label className='hon-p' for='Mobile'>Contact Number <span
-                                    style={{ color: "red" }}>*</span> </label> </div>
+                                    style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
                                 <input type='text' className='text' id='Mobile' aria-required='true' aria-label='Mobile' name='Mobile'
                                     aria-valuemax='30' maxlength='30' />
@@ -85,7 +86,7 @@ const ContactUs = () => {
 
                         <div className='cont-inp-cont'>
                             <div className='' > <label className='hon-p' for='Email'>Your Email <span
-                                style={{ color: "red" }}>*</span> </label> </div>
+                                style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
                                 <input type='text' className='text' ftype='email' autocomplete='false' id='Email' aria-required='true'
                                     aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100' />
@@ -97,7 +98,7 @@ const ContactUs = () => {
                     <div className='cont-inp-cont'>
                         <div className=''>
                             <label for='Description' className='hon-p'>Tell us about your
-                                ZOHO Requirement <span style={{ color: "red" }}>*</span> </label>
+                                ZOHO Requirement <span style={{ color: "black" }}>*</span> </label>
                         </div>
                         <div >
                             <textarea className='text-text' cols={30} rows={5} aria-multiline='true'
@@ -147,7 +148,7 @@ const ContactUs = () => {
 
                     <div className='cont-inp-cont'>
                         <div className=''> </div>
-                        <div className='inp-cont'>
+                        <div className='inp-cont-btns'>
                             <input type='submit' id='formsubmit' role='button' className='sub-buttons'
                                 value='Submit' aria-label='Submit' title='Submit' />
                             <input type='reset' className='sub-buttons' role='button'
