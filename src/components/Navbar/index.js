@@ -13,6 +13,7 @@ const navContent = [
   { id: 3, text: 'Services', index: '#services' },
   /*{ id: 4, text: 'Blog', index: '#blog' },*/
   { id: 5, text: 'Testimonials', index: '#testimolials' },
+  { id: 6, text: 'Contact Us', index: '#contactus' }
 ];
 
 const Navbar = () => {
@@ -105,7 +106,7 @@ const Navbar = () => {
             </ul>
             {/*<a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank">
             <h1 className='big-text'>Contact Us</h1></a>*/}
-          <Link to="/contact"><h1 className='big-text'>Contact Us</h1></Link>
+          {/*<Link to="/contact"><h1 className='big-text'>Contact Us</h1></Link>*/}
           </div>
 
         </div>

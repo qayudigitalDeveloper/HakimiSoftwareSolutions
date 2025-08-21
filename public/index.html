@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    
     <link rel="icon" href="%PUBLIC_URL%/Artboardpng.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -113,6 +118,20 @@
 
   </head>
   <body>
+    <script>
+      function reloadImg5630670000011076052() { var captcha = document.getElementById('imgid5630670000011076052'); if (captcha.src.indexOf('&d') !== -1) { captcha.src = captcha.src.substring(0, captcha.src.indexOf('&d')) + '&d' + new Date().getTime(); } else { captcha.src = captcha.src + '&d' + new Date().getTime(); } } function historyBack5630670000011076052() { document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled'); reloadImg5630670000011076052(); window.removeEventListener('focus', historyBack5630670000011076052); } function validateEmail5630670000011076052() { var form = document.forms['WebToLeads5630670000011076052']; var emailFld = form.querySelectorAll('[ftype=email]'); var i; for (i = 0; i < emailFld.length; i++) { var emailVal = emailFld[i].value; if ((emailVal.replace(/^\s+|\s+$/g, '')).length != 0) { var atpos = emailVal.indexOf('@'); var dotpos = emailVal.lastIndexOf('.'); if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length) { alert('Please enter a valid email address. '); emailFld[i].focus(); return false; } } } return true; }
+      function checkMandatory5630670000011076052() {
+        var mndFileds = new Array('Company', 'Last Name', 'Email', 'Mobile', 'Description'); var fldLangVal = new Array('Company\x20Name', 'Your\x20Name', 'Your\x20Email', 'Contact\x20Number', 'Tell\x20us\x20about\x20your\x20ZOHO\x20Requirement'); for (i = 0; i < mndFileds.length; i++) { var fieldObj = document.forms['WebToLeads5630670000011076052'][mndFileds[i]]; if (fieldObj) { if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) { if (fieldObj.type == 'file') { alert('Please select a file to upload.'); fieldObj.focus(); return false; } alert(fldLangVal[i] + ' cannot be empty.'); fieldObj.focus(); return false; } else if (fieldObj.nodeName == 'SELECT') { if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') { alert(fldLangVal[i] + ' cannot be none.'); fieldObj.focus(); return false; } } else if (fieldObj.type == 'checkbox') { if (fieldObj.checked == false) { alert('Please accept ' + fldLangVal[i]); fieldObj.focus(); return false; } } try { if (fieldObj.name == 'Last Name') { name = fieldObj.value; } } catch (e) { } } } if (!validateEmail5630670000011076052()) { return false; } var urlparams = new URLSearchParams(window.location.search); if (urlparams.has('service') && (urlparams.get('service') === 'smarturl')) { var webform = document.getElementById('webform5630670000011076052'); var service = urlparams.get('service'); var smarturlfield = document.createElement('input'); smarturlfield.setAttribute('type', 'hidden'); smarturlfield.setAttribute('value', service); smarturlfield.setAttribute('name', 'service'); webform.appendChild(smarturlfield); } document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true); window.addEventListener('focus', historyBack5630670000011076052);
+      } function tooltipShow5630670000011076052(el) {
+        var tooltip = el.nextElementSibling; var tooltipDisplay = tooltip.style.display; if (tooltipDisplay == 'none') {
+          var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+          for (i = 0; i < allTooltip.length; i++) { allTooltip[i].style.display = 'none'; } tooltip.style.display = 'block';
+        } else { tooltip.style.display = 'none'; }
+      } 							</script>
+
+    <script id='wf_anal'
+      src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=b493739cba433bbc6cf78d6e262b45a23bae41e8840d004651b1be8cba7dbde31460b45f365c6f55b5bf3f4b888530f9gidd89a026474f6cd37bf1ae6dc4edae93729d5a5ac2087b1b127ffec2e11e6266bgid5e6e16e392abb73b0ada64da7a2aa7011ea8de13847354b5f48b0674e893411cgidb0c470b081a8e0052d01d773eee8426d36857001774eabde2249c0902cbaff73&tw=3caf7f92ab864ad28583fe6567ecdde1dcee4a976cb23c4d83814b1faf02f86f'> 						
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

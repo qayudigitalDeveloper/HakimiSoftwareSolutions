@@ -1,0 +1,112 @@
+.contact-bg-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont-left-cont {
+    width: 30%;
+    font-size: larger;
+}
+
+.conta-h {
+    margin-bottom: 20px;
+}
+
+.cont-ri-cont {
+    width: 40%;
+}
+
+.cont-inp-cont {
+    margin: 15px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.text {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 231, 231);
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.text-text {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(233, 231, 231);
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.inp-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons {
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.sub-buttons {
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: large;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (max-width: 425px) {
+    .contact-bg-cont {
+        flex-direction: column;
+    }
+
+    .cont-left-cont {
+        width: 80%;
+        font-size: larger;
+    }
+
+    .cont-ri-cont {
+        width: 80%;
+    }
+
+    .sub-buttons {
+        font-size: medium;
+    }
+
+    .buttons {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 375px) {
+    .inp-cont {
+        flex-direction: column;
+    }
+
+    .cont-inp-cont {
+        width: 90%;
+    }
+}
