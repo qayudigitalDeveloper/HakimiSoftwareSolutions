@@ -1,23 +1,30 @@
 .contact-bg-cont {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .cont-left-cont {
     width: 40%;
     font-size: larger;
+    margin-top: 30px;
 }
-.crem-li-p{
+
+.crem-li-p {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.need{
+.need {
     font-size: large;
     font-weight: 600;
     display: inline;
+}
+
+.subhe{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .conta-h {
@@ -26,6 +33,13 @@
 
 .cont-ri-cont {
     width: 40%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .cont-inp-cont {
@@ -36,10 +50,10 @@
 
 .text {
     width: 100%;
-    height: 40px;
+    height: 55px;
     margin-top: 10px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
     background-color: rgb(233, 231, 231);
     outline: none;
     font-size: 15px;
@@ -48,8 +62,8 @@
 
 .text-text {
     margin-top: 10px;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
     background-color: rgb(233, 231, 231);
     outline: none;
     font-size: 15px;
@@ -61,8 +75,9 @@
     align-items: center;
     justify-content: space-between;
 }
-.inp-cont-btns{
-display: flex;
+
+.inp-cont-btns {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -128,6 +143,7 @@ display: flex;
         width: 90%;
         margin: 0px;
     }
+
     .sub-buttons {
         font-size: medium;
     }

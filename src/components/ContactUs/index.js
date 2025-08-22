@@ -1,16 +1,36 @@
 import './index.css'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+import { FiPhone } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";
 
 const ContactUs = () => {
+    
+    const phone = "971566601500";
+    const message = encodeURIComponent("Hello, I want to know more about Zoho Implementation");
+    const whatsappUrl = `https://wa.me/${phone}?text=${message}`
+
     return (
         <div id="contactus" className="contact-bg-cont">
             <div className='cont-left-cont'>
                 <h1 className='conta-h'>Contact us</h1>
-                <p className='crem-li-p'><span className='need' >Need to get in touch with us? </span><br/>
-                    Either fill out the form with your inquiry or
-                    find the department email you'd like to contact below.
+                <p className='crem-li-p'><span className='need' >Need to get in touch with us? </span><br />
+                   Fill out the form and our team will get back to you within 24 hours
+                    with pricing and customization options.
                 </p>
+                <h4 className='subhe'>Contact Information</h4>
+                <p><FiPhone /> +971 5666 01500</p>
+                <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p><FaWhatsapp /> +971 5666 01500</p></a>
+                <p><a className="email-ever" href="mailto:murtaza@hakimisoftwaresolutions.com"><FiMail /> murtaza@hakimisoftwaresolutions.com</a></p>
+                
+                <h4 className='subhe'>Business Hours</h4>
+                <p>Monday - Saturday: 9.30 AM - 6.30 PM</p>
+                <p>Sunday: Closed</p>
             </div>
             <div id='crmWebToEntityForm'
                 className='cont-ri-cont' >
