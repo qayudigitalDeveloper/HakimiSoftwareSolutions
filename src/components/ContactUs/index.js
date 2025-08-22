@@ -14,7 +14,7 @@ const ContactUs = () => {
         <div id="contactus" className="contact-bg-cont">
             <div className='cont-left-cont'>
                 <h1 className='conta-h'>Contact us</h1>
-                <p className='crem-li-p'><span className='need' >Need to get in touch with us? </span><br />
+                <p className='cont-pa'><span className='need' >Need to get in touch with us? </span><br />
                    Fill out the form and our team will get back to you within 24 hours
                     with pricing and customization options.
                 </p>
@@ -65,26 +65,26 @@ const ContactUs = () => {
                     <div className='inp-cont'>
                         <div className='cont-inp-cont'>
                             <div className=''>
-                                <label for='Last_Name' className='hon-p'>Your Name <span
+                                <label htmlFor='Last_Name' className='hon-p'>Your Name <span
                                     style={{ color: "black" }}>*</span> </label>
                             </div>
                             <div className=''>
                                 <input type='text' className='text' id='Last_Name' aria-required='true'
                                     aria-label='Last Name'
-                                    name='Last Name' aria-valuemax='80' maxlength='80' />
+                                    name='Last Name' aria-valuemax='80' maxLength='80' />
                                 <div className=''> </div>
                             </div>
                         </div>
 
                         <div className='cont-inp-cont'>
                             <div className="">
-                                <label for='Company' className='hon-p'>
+                                <label htmlFor='Company' className='hon-p'>
                                     Company Name
                                     <span style={{ color: "black" }}>*</span>
                                 </label> </div>
                             <div className='zcwf_col_fld'>
                                 <input type='text' className='text' id='Company' aria-required='true' aria-label='Company'
-                                    name='Company' aria-valuemax='200' maxlength='200' />
+                                    name='Company' aria-valuemax='200' maxLength='200' />
                                 <div className=''>
 
                                 </div>
@@ -94,22 +94,22 @@ const ContactUs = () => {
                     <div className='inp-cont'>
                         <div className='cont-inp-cont'>
                             <div className=''>
-                                <label className='hon-p' for='Mobile'>Contact Number <span
+                                <label className='hon-p' htmlFor='Mobile'>Contact Number <span
                                     style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
                                 <input type='text' className='text' id='Mobile' aria-required='true' aria-label='Mobile' name='Mobile'
-                                    aria-valuemax='30' maxlength='30' />
+                                    aria-valuemax='30' maxLength='30' />
                                 <div className=''> </div>
                             </div>
                         </div>
 
 
                         <div className='cont-inp-cont'>
-                            <div className='' > <label className='hon-p' for='Email'>Your Email <span
+                            <div className='' > <label className='hon-p' htmlFor='Email'>Your Email <span
                                 style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
-                                <input type='text' className='text' ftype='email' autocomplete='false' id='Email' aria-required='true'
-                                    aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxlength='100' />
+                                <input type='text' className='text' ftype='email' autoComplete='false' id='Email' aria-required='true'
+                                    aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxLength='100' />
                                 <div className=''> </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ const ContactUs = () => {
 
                     <div className='cont-inp-cont'>
                         <div className=''>
-                            <label for='Description' className='hon-p'>Tell us about your
+                            <label htmlFor='Description' className='hon-p'>Tell us about your
                                 ZOHO Requirement <span style={{ color: "black" }}>*</span> </label>
                         </div>
                         <div >
@@ -155,7 +155,7 @@ const ContactUs = () => {
                             <div className="hon-p" id='reCaptchaField' >Enter the Captcha</div>
                             <div className=''>
                                 <input type='text' className='text' id='captchaField5630670000011076052'
-                                    aria-labelledby='reCaptchaField' aria-valuemax='10' maxlength='10' name='enterdigest' /> </div>
+                                    aria-labelledby='reCaptchaField' aria-valuemax='10' maxLength='10' name='enterdigest' /> </div>
                         </div>
 
                     </div>

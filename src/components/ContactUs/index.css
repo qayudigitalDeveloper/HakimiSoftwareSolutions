@@ -10,11 +10,6 @@
     margin-top: 30px;
 }
 
-.crem-li-p {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
 .need {
     font-size: large;
@@ -22,13 +17,20 @@
     display: inline;
 }
 
-.subhe{
+.subhe {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .conta-h {
     margin-bottom: 20px;
+}
+
+.cont-pa {
+    display: block;
+    font-size: 20px;
+    color: #000;
+
 }
 
 .cont-ri-cont {
@@ -120,6 +122,12 @@
         font-size: larger;
     }
 
+    .cont-pa {
+        align-self: flex-start;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
     .cont-ri-cont {
         width: 80%;
     }
@@ -142,6 +150,10 @@
     .cont-inp-cont {
         width: 90%;
         margin: 0px;
+    }
+
+    .cont-pa {
+        font-size: 15px;
     }
 
     .sub-buttons {

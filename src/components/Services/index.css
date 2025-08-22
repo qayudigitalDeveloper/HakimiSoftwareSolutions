@@ -1,150 +1,178 @@
-.crm-bg-cont{
-display: flex;
-align-items: center;
-flex-direction: column;
-padding-left: 60px;
-padding-right: 60px;
-padding-bottom: 60px;
-padding-top: 60px;
+.crm-bg-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
-.li-crm-cont{
+
+.li-crm-cont {
     background-color: #87CEFA45;
-height: 350px;
-border: none;
-border-radius: 24px;
-opacity: 1;
-padding-bottom: 20px;
-padding-left: 30px;
-padding-right: 20px;
-padding-top: 40px;
+    height: 350px;
+    border: none;
+    border-radius: 24px;
+    opacity: 1;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 40px;
 
 
 }
-.point{
+
+.point {
     margin-right: 10px;
     font-size: 20px;
     color: var(--primary-logo-color);
 }
-.crem-li-p{
+
+.crem-li-p {
     display: flex;
     align-items: center;
 }
-.li-crm{
+
+.li-crm {
     list-style-type: none;
     margin-bottom: 40px;
-width: 40%;   
-margin-right: 20px;
-margin-left: 20px;
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
 }
-.cont1{
+
+.cont1 {
     width: 50%;
     margin-right: 20px;
 }
-.cont2{
+
+.cont2 {
     width: 40%;
     margin-left: 20px;
 }
-.cont4{
+
+.cont4 {
     width: 50%;
     margin-left: 20px;
 }
-.cont3{
+
+.cont3 {
     width: 40%;
     margin-right: 20px;
 }
-.crm-ul{
+
+.crm-ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 80px;
 }
-.crm-imh{
+
+.crm-imh {
     height: 70px;
     margin-bottom: 30px;
 }
-.crm-li-h{
+
+.crm-li-h {
     margin-bottom: 20px;
     font-size: 22px;
     color: #000;
 }
-.crem-li-p{
+
+.crem-li-p {
     font-size: 20px;
     color: #000;
 }
-@media (max-width: 1024px){
-    
-    .li-crm-cont{
-            
-    height: 450px;
+
+@media (max-width: 1024px) {
+
+    .li-crm-cont {
+
+        height: 450px;
     }
-    
+
 }
-@media (max-width: 768px){
-    .crm-li-h{
+
+@media (max-width: 768px) {
+    .crm-li-h {
         font-size: 20px;
     }
-    .crem-li-p{
+
+    .crem-li-p {
         font-size: 15px;
     }
-    .li-crm{
+
+    .li-crm {
         width: 45%;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .li-crm-cont{
-            padding-bottom: 15px;
-    padding-left: 25px;
-    padding-right: 15px;
-    padding-top: 35px;
-    height: 450px;
+
+    .li-crm-cont {
+        padding-bottom: 15px;
+        padding-left: 25px;
+        padding-right: 15px;
+        padding-top: 35px;
+        height: 450px;
     }
-    .crm-imh{
+
+    .crm-imh {
         height: 60px;
     }
 }
 
-@media (max-width: 430px){
-.imple{
-    display: none;
+@media (max-width: 430px) {
+    .imple {
+        display: none;
+    }
+
+    .li-crm {
+        width: 100%;
+        height: auto;
+    }
+
+    .crm-ul {
+        padding-top: 50px;
+    }
+
+    .li-crm-cont {
+        height: auto;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crem-li-p {
+        align-self: flex-start;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .crm-li-h {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .crm-bg-cont {
+        padding: 30px;
+    }
+
+    .crm-imh {
+        margin-bottom: 20px;
+    }
+
+    .point {
+        font-size: 18px;
+    }
 }
-.li-crm{
-    width: 100%;
-    height: auto;
-}
-.crm-ul{
-    padding-top: 50px;
-}
-.li-crm-cont{
-    height: auto;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.crem-li-p{
-    align-self: flex-start;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-.crm-li-h{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.crm-bg-cont{
-    padding: 30px;
-}
-.crm-imh{
-    margin-bottom: 20px;
-}
-.point{
-    font-size: 18px;
-}
-}
+
 @media (max-width: 320px) {
-    .crm-bg-cont{
+    .crm-bg-cont {
         padding: 20px;
     }
-    .li-crm-cont{
+
+    .li-crm-cont {
         border-radius: 18px;
     }
 }
