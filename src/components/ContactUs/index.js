@@ -3,9 +3,12 @@ import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
+import image2 from './../../assets/image2.png';
+import image3 from './../../assets/image3.png';
+import image4 from './../../assets/image4.png';
 
 const ContactUs = () => {
-    
+
     const phone = "971566601500";
     const message = encodeURIComponent("Hello, I want to know more about Zoho Implementation");
     const whatsappUrl = `https://wa.me/${phone}?text=${message}`
@@ -13,11 +16,12 @@ const ContactUs = () => {
     return (
         <div id="contactus" className="contact-bg-cont">
             <div className='cont-left-cont'>
-                <h1 className='conta-h'>Contact us</h1>
+                <h1 className='conta-h'>CONTACT US</h1>
                 <p className='cont-pa'><span className='need' >Need to get in touch with us? </span><br />
-                   Fill out the form and our team will get back to you within 24 hours
+                    Fill out the form and our team will get back to you within 24 hours
                     with pricing and customization options.
                 </p>
+
                 <h4 className='subhe'>Contact Information</h4>
                 <p><FiPhone /> +971 5666 01500</p>
                 <a
@@ -27,11 +31,41 @@ const ContactUs = () => {
                 >
                     <p><FaWhatsapp /> +971 5666 01500</p></a>
                 <p><a className="email-ever" href="mailto:murtaza@hakimisoftwaresolutions.com"><FiMail /> murtaza@hakimisoftwaresolutions.com</a></p>
-                
+
+                <h4 className='subhe'>Our Locations</h4>
+                <div className='contac-flag-cont'>
+                    <img src={image2} alt="flag1" className='flag' />
+                    <div>
+                        <p><span className='span-contac'>
+                            Alliance Business Centre, </span>
+                        Floor 4, Entrance #2,
+                            Business Village,- AL Maktoum RD- Dubai</p></div>
+                </div>
+                <div className='contac-flag-cont'>
+                    <img src={image4} alt="flag1" className='flag' />
+                    <div>
+                        <p><span className='span-contac'>
+                            Olympia Cyberspace,, </span>
+                                     Arulayiammanpet, Sidco
+        Industrial Estate, Guindy, Chennai, Tamil Nadu
+        600032- India</p></div>
+                </div>
+                <div className='contac-flag-cont'>
+                    <img src={image3} alt="flag1" className='flag' />
+                    <div>
+                        <p><span className='span-contac'>
+                            Hormus Grand, </span>
+                                      111 AL Matar ST, Muscat 128-
+        Oman</p></div>
+                </div>
+
+
                 <h4 className='subhe'>Business Hours</h4>
                 <p>Monday - Saturday: 9.30 AM - 6.30 PM</p>
                 <p>Sunday: Closed</p>
+
             </div>
+
             <div id='crmWebToEntityForm'
                 className='cont-ri-cont' >
 

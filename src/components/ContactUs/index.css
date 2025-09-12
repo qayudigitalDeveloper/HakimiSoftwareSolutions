@@ -10,27 +10,46 @@
     margin-top: 30px;
 }
 
+.cont-left-cont p{
+    font-family: "Inter";
+}
+.contac-flag-cont{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.flag{
+    height: 20px;
+    margin-right: 5px;
+}
+
 
 .need {
     font-size: large;
     font-weight: 600;
     display: inline;
 }
+.span-contac{
+    font-weight: bold;
+}
 
 .subhe {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-family: "Inter";
 }
 
 .conta-h {
     margin-bottom: 20px;
+    font-family: "Montserrat";
 }
 
 .cont-pa {
     display: block;
     font-size: 20px;
     color: #000;
-
+font-family: "Inter";
 }
 
 .cont-ri-cont {
@@ -115,11 +134,12 @@
 @media (max-width: 425px) {
     .contact-bg-cont {
         flex-direction: column;
+        margin: 20px;
     }
 
     .cont-left-cont {
         width: 80%;
-        font-size: larger;
+        
     }
 
     .cont-pa {
@@ -129,7 +149,7 @@
     }
 
     .cont-ri-cont {
-        width: 80%;
+        width: 100%;
     }
 
     .sub-buttons {
