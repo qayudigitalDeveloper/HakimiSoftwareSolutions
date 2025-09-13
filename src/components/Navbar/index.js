@@ -5,7 +5,6 @@ import { FaBars, FaPhoneAlt } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
-import { Link } from 'react-router-dom';
 
 const navContent = [
   { id: 1, text: 'Home', index: '#home' },
@@ -74,7 +73,7 @@ const Navbar = () => {
 
             </div>
             <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
-              <a><GoMail className='contacticons' onClick={handlemail} /></a>
+              <GoMail className='contacticons' onClick={handlemail} />
               <a style={{ textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
                 <FaLinkedinIn className='contacticons' />
               </a>
@@ -105,8 +104,8 @@ const Navbar = () => {
               ))}
             </ul>
             {/*<a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" target="_blank">
-            <h1 className='big-text'>Contact Us</h1></a>*/}
-          {/*<Link to="/contact"><h1 className='big-text'>Contact Us</h1></Link>*/}
+            <h2 className='big-text'>Contact Us</h2></a>*/}
+          {/*<Link to="/contact"><h2 className='big-text'>Contact Us</h2></Link>*/}
           </div>
 
         </div>

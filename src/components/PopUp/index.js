@@ -4,7 +4,7 @@ const PopUp = ({ message, onClose }) => {
     return (
         <div className="popup-overlay">
             <div className="popup-box">
-                <h1>GET FREE QUOTE</h1>
+                <h2>GET FREE QUOTE</h2>
                 <p>If you have any requirement please share with us at
                     info@useo.ae or simply send us your inquiry by filling out the form below.</p>
                 <form type="">

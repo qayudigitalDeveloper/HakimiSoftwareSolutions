@@ -4,7 +4,7 @@ const WhyHakimi=()=>{
     return (
         <div className='why-bg-cont'>
             <div className='why-cont1'>
-                <h1 className='why-h'>Why Hakimi?</h1>
+                <h2 className='why-h'>Why Hakimi?</h2>
                 <p className='why-p'>Bulit by a founder who gets operations.</p>
             </div>
             <div className='why-cont'>

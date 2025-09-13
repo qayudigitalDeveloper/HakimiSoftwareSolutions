@@ -1,5 +1,4 @@
 import './index.css'
-import { FaRegHandPointRight } from "react-icons/fa";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 const serviceslist = [
@@ -58,7 +57,7 @@ const serviceslist = [
 const Services = () => {
     return (
         <div id='services' className='crm-bg-cont'>
-            <h1 className='hon-h'>What we Implement for you</h1>
+            <h2 className='hon-h'>What we Implement for you</h2>
             <p className='hon-p imple'>We don’t just set up Zoho CRM — we build your entire business OS.</p>
             <p className='imple'>Hakimi helps you transition from scattered tools to a seamless, automated system using Zoho’s full suite of business apps.</p>
             {/*<ul className='crm-ul'>
@@ -69,7 +68,7 @@ const Services = () => {
                             alt="img-logo"
                             className='crm-imh'
                         />
-                        <h1 className='crm-li-h'>Lead Management + CRM Setup</h1>
+                        <h2 className='crm-li-h'>Lead Management + CRM Setup</h2>
                         <p className='crem-li-p'>Custom setup to track, assign, and follow up leads without losing a single one.</p>
                     </div>
                 </li>
@@ -80,7 +79,7 @@ const Services = () => {
                             alt="img-logo"
                             className='crm-imh'
                         />
-                        <h1 className='crm-li-h'>Automated Follow-Ups</h1>
+                        <h2 className='crm-li-h'>Automated Follow-Ups</h2>
                         <p className='crem-li-p'>Never forget to send a message or proposal again.</p>
                     </div>
                 </li>
@@ -90,7 +89,7 @@ const Services = () => {
                             src="https://res.cloudinary.com/dmadollpi/image/upload/v1752730203/Artboard_3_1_qbw9bq.png"
                             alt="img-logo"
                             className='crm-imh' />
-                        <h1 className='crm-li-h'>Sales Funnel Dashboards</h1>
+                        <h2 className='crm-li-h'>Sales Funnel Dashboards</h2>
                         <p className='crem-li-p'>Real-time insights on how your business is actually performing.</p>
                     </div>
                 </li>
@@ -101,7 +100,7 @@ const Services = () => {
                             alt="img-logo"
                             className='crm-imh'
                         />
-                        <h1 className='crm-li-h'>Client Retention Systems</h1>
+                        <h2 className='crm-li-h'>Client Retention Systems</h2>
                         <p className='crem-li-p'>Keep customers warm, engaged, and coming back—without manual work.</p>
                     </div>
                 </li>
@@ -112,10 +111,10 @@ const Services = () => {
                         <div className='li-crm-cont'>
                             <img
                                 src={each.service_image}
-                                alt="service image"
+                                alt={each.service_image}
                                 className='crm-imh'
                             />
-                            <h1 className='crm-li-h'>{each.service}</h1>
+                            <h2 className='crm-li-h'>{each.service}</h2>
                             {each.sub_services.map(eachserve => 
                                 <p key={eachserve} className='crem-li-p'><VscDebugBreakpointLog className='point' />  {eachserve}</p>
                             )}

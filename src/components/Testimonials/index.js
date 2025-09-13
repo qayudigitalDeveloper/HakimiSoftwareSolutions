@@ -8,7 +8,7 @@ import voccalogo from './../../assets/voccalogo.avif'
 const Testimonials=()=>{
     return (
         <div id="testimolials" className='texti-bg-cont'>
-            <h1 className='hon-h'>Testimonials</h1>
+            <h2 className='hon-h'>Testimonials</h2>
             <p className='hon-p'>What our Clients say about us</p>
             <div className='testi-cards-cont'>
             <div className='testi-cont'>
@@ -16,7 +16,7 @@ const Testimonials=()=>{
                 className='profile-img' 
                 src={trutermslogo}
                 alt="profile-img" />
-                <h1 className='test-name'>Truterms</h1>
+                <h2 className='test-name'>Truterms</h2>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
@@ -32,7 +32,7 @@ const Testimonials=()=>{
                 src={voccalogo}
                 alt="profile-img"
                  />
-                <h1 className='test-name'>VOCCA</h1>
+                <h2 className='test-name'>VOCCA</h2>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star'/>
                     <MdOutlineStarPurple500 className='blue star' />
@@ -49,7 +49,7 @@ const Testimonials=()=>{
                 src={projobs4youlogo}
                 alt="profile-img"
                 />
-                <h1 className='test-name'>ProJobs4You</h1>
+                <h2 className='test-name'>ProJobs4You</h2>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />

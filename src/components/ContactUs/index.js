@@ -1,7 +1,6 @@
 import './index.css'
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import { FaWhatsapp } from "react-icons/fa";
 import image2 from './../../assets/image2.png';
 import image3 from './../../assets/image3.png';
@@ -16,7 +15,7 @@ const ContactUs = () => {
     return (
         <div id="contactus" className="contact-bg-cont">
             <div className='cont-left-cont'>
-                <h1 className='conta-h'>CONTACT US</h1>
+                <h2 className='conta-h'>CONTACT US</h2>
                 <p className='cont-pa'><span className='need' >Need to get in touch with us? </span><br />
                     Fill out the form and our team will get back to you within 24 hours
                     with pricing and customization options.
