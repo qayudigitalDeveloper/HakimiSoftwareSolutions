@@ -78,7 +78,7 @@
 .hon-btn {
     font-style: Semi Bold;
     font-size: var(--desc-font-size);
-    color: #fff;
+    
     line-height: 100%;
     letter-spacing: 0%;
 
@@ -86,11 +86,13 @@
     height: 60px;
     border: none;
     border-radius: 12px;
-    background-color: var(--primary-logo-color);
+    
     opacity: 1;
     margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+
+    background-color: #1a73e8; /* replace with a darker shade of your primary color */
+    color: #fff;
 
 
     cursor: pointer;
@@ -189,8 +191,6 @@
     background-color: var(--primary-logo-color);
     opacity: 1;
     margin-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
     padding: 10px;
 
 
@@ -213,6 +213,9 @@
 
         padding-top: 50px;
         padding-bottom: 30px;
+    }
+    .tick{
+        margin-top: 10px;
     }
 
     .hon-p {
@@ -267,5 +270,23 @@
     }
     .hon-btn{
         display: none;
+    }
+    .li-hon{
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 375px) {
+    .hon-le-img {
+        height: 30vh;
+    }
+    .li-hon{
+        align-items: fl-start;
+    }
+}
+
+@media (max-width: 320px) {
+    .hon-le-img {
+        height: 20vh;
     }
 }

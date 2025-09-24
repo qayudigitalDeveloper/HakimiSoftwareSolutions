@@ -21,7 +21,7 @@ const ContactUs = () => {
                     with pricing and customization options.
                 </p>
 
-                <h4 className='subhe'>Contact Information</h4>
+                <h2 className='subhe'>Contact Information</h2>
                 <p><FiPhone /> +971 5666 01500</p>
                 <a
                     href={whatsappUrl}
@@ -31,7 +31,7 @@ const ContactUs = () => {
                     <p><FaWhatsapp /> +971 5666 01500</p></a>
                 <p><a className="email-ever" href="mailto:murtaza@hakimisoftwaresolutions.com"><FiMail /> murtaza@hakimisoftwaresolutions.com</a></p>
 
-                <h4 className='subhe'>Our Locations</h4>
+                <h2 className='subhe'>Our Locations</h2>
                 <div className='contac-flag-cont'>
                     <img src={image2} alt="flag1" className='flag' />
                     <div>
@@ -59,7 +59,7 @@ const ContactUs = () => {
                 </div>
 
 
-                <h4 className='subhe'>Business Hours</h4>
+                <h2 className='subhe'>Business Hours</h2>
                 <p>Monday - Saturday: 9.30 AM - 6.30 PM</p>
                 <p>Sunday: Closed</p>
 
@@ -102,9 +102,14 @@ const ContactUs = () => {
                                     style={{ color: "black" }}>*</span> </label>
                             </div>
                             <div className=''>
-                                <input type='text' className='text' id='Last_Name' aria-required='true'
-                                    aria-label='Last Name'
-                                    name='Last Name' aria-valuemax='80' maxLength='80' />
+                                <input 
+                                type='text' 
+                                className='text' 
+                                id='Last_Name' 
+                                aria-required='true'
+                                aria-label='Last Name'
+                                name='Last Name' 
+                                maxLength='80' />
                                 <div className=''> </div>
                             </div>
                         </div>
@@ -117,7 +122,7 @@ const ContactUs = () => {
                                 </label> </div>
                             <div className='zcwf_col_fld'>
                                 <input type='text' className='text' id='Company' aria-required='true' aria-label='Company'
-                                    name='Company' aria-valuemax='200' maxLength='200' />
+                                    name='Company'  maxLength='200' />
                                 <div className=''>
 
                                 </div>
@@ -131,7 +136,7 @@ const ContactUs = () => {
                                     style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
                                 <input type='text' className='text' id='Mobile' aria-required='true' aria-label='Mobile' name='Mobile'
-                                    aria-valuemax='30' maxLength='30' />
+                                     maxLength='30' />
                                 <div className=''> </div>
                             </div>
                         </div>
@@ -142,7 +147,7 @@ const ContactUs = () => {
                                 style={{ color: "black" }}>*</span> </label> </div>
                             <div className=''>
                                 <input type='text' className='text' ftype='email' autoComplete='false' id='Email' aria-required='true'
-                                    aria-label='Email' name='Email' aria-valuemax='100' crmlabel='' maxLength='100' />
+                                    aria-label='Email' name='Email' crmlabel='' maxLength='100' />
                                 <div className=''> </div>
                             </div>
                         </div>
@@ -165,20 +170,20 @@ const ContactUs = () => {
                     <div className='inp-cont'>
                         <div className='cont-inp-cont'>
                             <div className=''> </div>
-                            <div className=''> <img id='imgid5630670000011076052' style={{ width: "70%" }}
+                            <div className=''> 
+                                <img id='imgid5630670000011076052' style={{ width: "70%" }} alt="icon"
                                 src='https://crm.zoho.com/crm/CaptchaServlet?formId=38aa56abe110fc55dd95c0761802792957742a71ea3957aa6866d3b9222c94a17d3ccb12d3577a242e8021708fd5e9aa&grpid=cc3f42e98ebbd43b8b2f16969cb681eb5a9f4ac4efe5a461a8c462af4e360f71' />
                                 {/*<a href='javascript:;' onclick='reloadImg5630670000011076052();'>Reload</a>*/}
 
-                                <a
-                                    href="#"
+                                <button
+                                type='button'
                                     className='buttons'
-                                    onClick={(e) => {
-                                        e.preventDefault(); // stops page from jumping to top
+                                    onClick={() => {
                                         window.reloadImg5630670000011076052(); // call the Zoho function
                                     }}
                                 >
                                     Reload
-                                </a>
+                                </button>
 
                             </div>
                             <div className=''> </div>
@@ -188,7 +193,7 @@ const ContactUs = () => {
                             <div className="hon-p" id='reCaptchaField' >Enter the Captcha</div>
                             <div className=''>
                                 <input type='text' className='text' id='captchaField5630670000011076052'
-                                    aria-labelledby='reCaptchaField' aria-valuemax='10' maxLength='10' name='enterdigest' /> </div>
+                                    aria-labelledby='reCaptchaField' maxLength='10' name='enterdigest' /> </div>
                         </div>
 
                     </div>
@@ -202,14 +207,14 @@ const ContactUs = () => {
                     <div className='cont-inp-cont'>
                         <div className=''> </div>
                         <div className='inp-cont-btns'>
-                            <input type='submit' id='formsubmit' role='button' className='sub-buttons'
+                            <input type='submit' id='formsubmit'  className='sub-buttons'
                                 value='Submit' aria-label='Submit' title='Submit' />
-                            <input type='reset' className='sub-buttons' role='button'
+                            <input type='reset' className='sub-buttons' 
                                 name='reset' value='Reset' aria-label='Reset' title='Reset' />
                         </div>
                     </div>
                 </form>
-                <iframe name='captchaFrame' style={{ display: "none" }}> </iframe>
+                <iframe title='captcha' name='captchaFrame' style={{ display: "none" }}> </iframe>
             </div>
         </div >
     )

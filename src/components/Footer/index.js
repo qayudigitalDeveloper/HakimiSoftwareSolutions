@@ -26,26 +26,26 @@ const Footer = () => {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                >
-                    <button className='footer-btn'>
-                        Book a free consultation on <span>WhatsApp</span>
-                    </button>
+                    className='footer-btn'>
+
+                    Book a free consultation on <span>WhatsApp</span>
+
 
                 </a>
             </div>
             <div className='footericonscont'>
-            <div className='footernav-up-cont'>
-                <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "center" }}>
-                    <GoMail className='footercontacticons' onClick={handlemail} />
-                    <a style={{ textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all"
-                        target='_blank' rel="noopener noreferrer">
-                        <FaLinkedinIn className='footercontacticons' />
-                    </a>
-                    <a href="https://www.instagram.com/hakimisoftwaresolutions" target="_blank" rel="noopener noreferrer">
-                        <IoLogoInstagram className='footercontacticons' />
-                    </a>
+                <div className='footernav-up-cont'>
+                    <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "center" }}>
+                        <GoMail className='footercontacticons' onClick={handlemail} />
+                        <a style={{ textDecoration: "none", margin: "0px" }} aria-label="LinkedIn" href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all"
+                            target='_blank' rel="noopener noreferrer">
+                            <FaLinkedinIn className='footercontacticons' />
+                        </a>
+                        <a href="https://www.instagram.com/hakimisoftwaresolutions" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <IoLogoInstagram className='footercontacticons' />
+                        </a>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     )

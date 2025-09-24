@@ -27,6 +27,7 @@ const Home = () =>{
         target="_blank"
         rel="noopener noreferrer"
         className='whatsicon'
+        aria-label="Whatsapp"
       >
         <FaWhatsapp />
       </a>

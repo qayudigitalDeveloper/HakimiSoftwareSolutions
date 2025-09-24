@@ -74,10 +74,10 @@ const Navbar = () => {
             </div>
             <div style={{ display: "flex", alignItems: 'center', width: "auto", justifyContent: "space-between" }}>
               <GoMail className='contacticons' onClick={handlemail} />
-              <a style={{ textDecoration: "none", margin: "0px" }} href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
+              <a style={{ textDecoration: "none", margin: "0px" }} aria-label='LinkedIn' href="https://www.linkedin.com/company/hakimisoftwaresolutions/posts/?feedView=all" target='_blank' rel="noopener noreferrer">
                 <FaLinkedinIn className='contacticons' />
               </a>
-              <a href="https://www.instagram.com/hakimisoftwaresolutions" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/hakimisoftwaresolutions" aria-label='Instagram' target="_blank" rel="noopener noreferrer">
                 <IoLogoInstagram className='contacticons' />
               </a>
             </div>

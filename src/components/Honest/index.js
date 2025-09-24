@@ -10,23 +10,23 @@ const Honest=()=>{
             <p className='hon-p'>Most businesses don’t fail because of a bad product. 
                 They fail because of broken internal processes.</p>
             <ul className='ul-hon'>
-                <li className='li-hon'><IoCheckmark className="tick" /> If you're constantly asking your team for updates...</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> If deals are slipping through the cracks…</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> If follow-ups depend on someone’s memory…</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> It’s not your team’s fault.It’s your system.</li>
+                <li className='li-hon'><IoCheckmark className="tick" /><p> If you're constantly asking your team for updates... </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /><p> If deals are slipping through the cracks… </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /><p> If follow-ups depend on someone’s memory… </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /><p> It’s not your team’s fault.It’s your system. </p> </li>
             </ul>
-            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" rel="noreferrer" target="_blank">
-                <button className='hon-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            <a className='hon-btn' href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" rel="noreferrer" target="_blank">
+                At Hakimi Software Solutions, we help you fix that
             </a>
         </div>
         <ul className='mib-ul'>
-                <li className='li-hon'><IoCheckmark className="tick" /> If you're constantly asking your team for updates...</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> If deals are slipping through the cracks…</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> If follow-ups depend on someone’s memory…</li> 
-                <li className='li-hon'><IoCheckmark className="tick" /> It’s not your team’s fault.It’s your system.</li>
+                <li className='li-hon'><IoCheckmark className="tick" /> <p>If you're constantly asking your team for updates... </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /> <p> If deals are slipping through the cracks… </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /><p> If follow-ups depend on someone’s memory… </p> </li> 
+                <li className='li-hon'><IoCheckmark className="tick" /><p> It’s not your team’s fault.It’s your system. </p> </li>
             </ul>
-            <a href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" rel="noreferrer" target="_blank">
-                <button className='mob-btn'>At Hakimi Software Solutions, we help you fix that</button>
+            <a className='mob-btn' href="https://murtazakanchwala-hakimisoftwaresolutions.zohobookings.com/#/meeting" rel="noreferrer" target="_blank">
+                At Hakimi Software Solutions, we help you fix that
             </a>
     </div>
 }
