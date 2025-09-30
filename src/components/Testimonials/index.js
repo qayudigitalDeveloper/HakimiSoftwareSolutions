@@ -12,11 +12,12 @@ const Testimonials=()=>{
             <p className='hon-p'>What our Clients say about us</p>
             <div className='testi-cards-cont'>
             <div className='testi-cont'>
-                <img 
+                <a href='https://trutermsconsultancy.com/' 
+                aria-label="Vocca" target='_blank' rel="noopener noreferrer" className='testi-cont-sub'><img 
                 className='profile-img' 
                 src={trutermslogo}
                 alt="profile-img" />
-                <h2 className='test-name'>Truterms</h2>
+                <h2 className='test-name'>Truterms</h2></a>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
@@ -27,12 +28,13 @@ const Testimonials=()=>{
                 <p>“What stood out most for us was that Murtaza and his team took the time to understand our requirements they pay attention to detail, are always a call away, and are commited to delivering top-notch results.”</p>
             </div>
             <div className='testi-cont'>
-                <img 
+                <a href='https://vocca.co/' 
+                aria-label="Vocca" target='_blank' rel="noopener noreferrer" className='testi-cont-sub' ><img 
                 className='profile-img'
                 src={voccalogo}
                 alt="profile-img"
                  />
-                <h2 className='test-name'>VOCCA</h2>
+                <h2 className='test-name'>VOCCA</h2></a>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star'/>
                     <MdOutlineStarPurple500 className='blue star' />
@@ -44,12 +46,13 @@ const Testimonials=()=>{
                      and he has always been an integral part in making sure we had a system and a structure in place.”</p>
             </div>
             <div className='testi-cont'>
-                <img 
+                <a href='https://projobs4you.com/' 
+                aria-label="Vocca" target='_blank' rel="noopener noreferrer" className='testi-cont-sub' ><img 
                 className='profile-img' 
                 src={projobs4youlogo}
                 alt="profile-img"
                 />
-                <h2 className='test-name'>ProJobs4You</h2>
+                <h2 className='test-name'>ProJobs4You</h2></a>
                 <div className='star-cont'>
                     <MdOutlineStarPurple500 className='blue star' />
                     <MdOutlineStarPurple500 className='blue star' />
