@@ -22,15 +22,7 @@ const ContactUs = () => {
                 </p>
 
                 <h2 className='subhe'>Contact Information</h2>
-    {/*  
-        // <p><FiPhone /> +971 5666 01500</p>
-                // <a
-                //     href={whatsappUrl}
-                //     target="_blank"
-                //     rel="noopener noreferrer"
-                // >
-                //     <p><FaWhatsapp /> +971 5666 01500</p></a> 
-        */}
+    
                 <p><a className="email-ever" href="mailto:murtaza@hakimisoftwaresolutions.com"><FiMail /> murtaza@hakimisoftwaresolutions.com</a></p>
 
                 <h2 className='subhe'>Our Locations</h2>
