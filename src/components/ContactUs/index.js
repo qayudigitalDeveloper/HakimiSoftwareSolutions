@@ -34,7 +34,7 @@ const ContactUs = () => {
                         // Floor 4, Entrance #2,
                         //     Business Village,- AL Maktoum RD- Dubai
                         // </p>
-                             <p><span className='span-contac'>
+                             <p>
                             Al Rashidiya 2 - Ajman 
                         </p>
                     </div>
