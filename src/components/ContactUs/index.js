@@ -22,23 +22,28 @@ const ContactUs = () => {
                 </p>
 
                 <h2 className='subhe'>Contact Information</h2>
-                <p><FiPhone /> +971 5666 01500</p>
-                <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <p><FaWhatsapp /> +971 5666 01500</p></a>
+                // <p><FiPhone /> +971 5666 01500</p>
+                // <a
+                //     href={whatsappUrl}
+                //     target="_blank"
+                //     rel="noopener noreferrer"
+                // >
+                //     <p><FaWhatsapp /> +971 5666 01500</p></a>
                 <p><a className="email-ever" href="mailto:murtaza@hakimisoftwaresolutions.com"><FiMail /> murtaza@hakimisoftwaresolutions.com</a></p>
 
                 <h2 className='subhe'>Our Locations</h2>
                 <div className='contac-flag-cont'>
                     <img src={image2} alt="flag1" className='flag' />
                     <div>
-                        <p><span className='span-contac'>
-                            Alliance Business Centre, </span>
-                        Floor 4, Entrance #2,
-                            Business Village,- AL Maktoum RD- Dubai</p></div>
+                        // <p><span className='span-contac'>
+                        //     Alliance Business Centre, </span>
+                        // Floor 4, Entrance #2,
+                        //     Business Village,- AL Maktoum RD- Dubai
+                        // </p>
+                             <p><span className='span-contac'>
+                            Al Rashidiya 2 - Ajman 
+                        </p>
+                    </div>
                 </div>
                 <div className='contac-flag-cont'>
                     <img src={image4} alt="flag1" className='flag' />
