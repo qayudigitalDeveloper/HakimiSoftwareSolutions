@@ -29,11 +29,6 @@ const ContactUs = () => {
                 <div className='contac-flag-cont'>
                     <img src={image2} alt="flag1" className='flag' />
                     <div>
-                        // <p><span className='span-contac'>
-                        //     Alliance Business Centre, </span>
-                        // Floor 4, Entrance #2,
-                        //     Business Village,- AL Maktoum RD- Dubai
-                        // </p>
                              <p>
                             Al Rashidiya 2 - Ajman 
                         </p>
